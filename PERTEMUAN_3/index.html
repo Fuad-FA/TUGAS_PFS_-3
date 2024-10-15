@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Profitin Cuuy</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Gambaran Umum</a></li>
+                    <li><a href="#">Pertumbuhan</a></li>
+                    <li><a href="#">Pelanggan</a></li>
+                    <li><a href="#">Laporan</a></li>
+                    <li><a href="#">Bantuan</a></li>
+                    <li><a href="#">Pengaturan</a></li>
+                </ul>
+            </nav>
+            <div class="logout">
+                <a href="#">Keluar</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <div class="search">
+                    <input type="text" placeholder="cari disini ">
+                </div>
+                <div class="user-info">
+                    <span class="user-name">FUAD FADHLIL 'AZHIIM</span>
+                    <img src="user-avatar.png" alt="Avatar" class="user-avatar">
+                </div>
+            </header>
+
+            <section class="overview">
+                <div class="kpi">
+                    <h3>KPIs</h3>
+                    <div class="kpi-item">
+                        <span>MRR Saat Ini</span>
+                        <h4>$855.4k</h4>
+                        <span class="kpi-growth">+16%</span>
+                    </div>
+                    <div class="kpi-item">
+                        <span>Pelanggan saat ini</span>
+                        <h4>127,754</h4>
+                        <span class="kpi-growth">+17%</span>
+                    </div>
+                    <div class="kpi-item">
+                        <span>Pelanggan Aktif</span>
+                        <h4>73.57%</h4>
+                        <span class="kpi-growth">+21%</span>
+                    </div>
+                </div>
+
+                <div class="analytics">
+                    <h3>Analisa</h3>
+                    <canvas id="pieChart"></canvas>
+                </div>
+
+                <div class="growth">
+                    <h3>Pertumbuhan Tahun Ini</h3>
+                    <canvas id="growthChart"></canvas>
+                </div>
+            </section>
+
+            <section class="recent-activity">
+                <h3>Aktivitas Terbaru</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pelanggan</th>
+                            <th>Status</th>
+                            <th>Nomor pesanan</th>
+                            <th>Saldo</th>
+                            <th>Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bedjo Banget</td>
+                            <td>Pelanggan Sepuh</td>
+                            <td>#0038160</td>
+                            <td>1 menit yang lalu</td>
+                            <td>Rp. 100.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>Paijo </td>
+                            <td>Pelanggan Baru</td>
+                            <td>#0038159</td>
+                            <td>5 menit yang lalu</td>
+                            <td>Rp. 1000.000</td>
+                        </tr>
+                        <tr>
+                            <td>Sri Wedari</td>
+                            <td>Pelanggan Setia</td>
+                            <td>#0038158</td>
+                            <td>24 menit yang lalu</td>
+                            <td>Rp. 70.000.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="style.css">
